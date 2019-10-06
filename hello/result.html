@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello!</title>
+    <link rel="stylesheet" type='text/css' href='output.css'>
+    <script src="js/result.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 id="main-title" class="pt-4 sm:pt-12 md:pt-12 lg:pt-12 xl:pt-24 text-6xl text-center"></h1>
+      <p id="greeting" class="text-center">You're logged in!</p>
+      <div id="ip-info" class="mt-12 flex flex-col justify-between">
+        <p id="ip" class="text-center text-xl"></p>
+        <p id="country" class="text-center text-xl"></p>
+        <p id="region" class="text-center text-xl"></p>
+        <p id="city" class="text-center text-xl"></p>
+        <p id="zip-code" class="text-center text-xl"></p>
+        <p id="time-zone" class="text-center text-xl"></p>
+      </div>
+      <p id="manual-entry-label" class="text-center text-2xl mt-5 sm:mt-12 md:mt-24 lg:mt-24 xl:mt-32">Enter a country code manually:</p>
+      <div id="manual-entry" class="mx-auto mt-8 sm:mt-12 md:mt-8 w-8/12 sm:w-6/12 md:w-5/12 xl:w-2/12 lg:mt-8 lg:w-4/12 xl:mt-6 flex flex-row justify-between">
+        <input type="text" name="zip" id="zip-enter" class="xl:w-6/12 border border-gray-400">
+        <button id="zip-submit" class="bg-blue-500 rounded text-white p-2 pr-3 pl-3 sm:p-2 md:pl-3 md:pr-3 md:p-2 lg:p-2 lg:pl-3 lg:pr-3 xl:p-1 xl:pl-3 xl:pr-3">Submit</button>
+      </div>
+      <p id="footer" class="absolute bottom-0 mb-3 text-xs w-full text-center">Made by <a href="http://ethanroos.website">Ethan Roos</a></p>
+    </main>
+  </body>
+</html>
