@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe App</title>
+    <script src="https://use.fontawesome.com/ce7f15f682.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script type="text/babel" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-text" id="title">Recipe Notebook</h1>
+      <button id="recipe-adder">Add a recipe</button>
+    </header>
+    <div id="recipe-container">
+
+    </div>
+    <div id="recipe-search-container" class="hidden">
+      <div class="body-overlay"></div>
+      <div class="recipe-search-sub">
+        <div class="recipe-search-header">
+          <h1 class="recipe-search-title">Add a recipe</h1>
+          <i class="material-icons exit-popup" id="recipe-search-clear">clear</i>
+        </div>
+        <div class="recipe-search-body">
+          <div class="search-input-container">
+            <p class="search-desc-text popup-text">Search for a recipe</p>
+            <div id="search-bar-cover">
+              <input id="search-bar">
+              <i class="material-icons material-icons-black" id="search-icon">search</i>
+            </div>
+          </div>
+          <div id="search-output-container">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popup-container" class="hidden">
+      <div class="body-overlay"></div>
+      <div class="recipe-popup">
+        <div class="popup-name-container">
+          <p class="popup-name" id="popup-name"></p>
+          <i class="material-icons exit-popup" id="recipe-popup-clear">clear</i>
+        </div>
+        <div class="popup-desc-container">
+          <div class="popup-ingredients-container">
+            <p class="ingredients-label popup-text">Ingredients</p>
+            <ul class="popup-ingredients-list" id="ingredients-list">
+
+            </ul>
+          </div>
+          <div class="popup-img-container">
+            <img class="recipe-img" id="popup-img" src="">
+          </div>
+          <div class="popup-instructions-container">
+            <p class="instructions-label popup-text">Instructions</p>
+            <div class="popup-recipe-instructions" id="popup-instructions-container">
+              <p class="popup-text" id="popup-instructions"></p>
+            </div>
+          </div>
+        </div>
+        <div class="popup-actions-container">
+          <button class="delete-recipe-button">Delete <i class="material-icons">delete</i></button>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+  </body>
+</html>
