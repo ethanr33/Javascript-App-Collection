@@ -5,7 +5,7 @@ They will be made with HTML, CSS, JavaScript, and the MEAN stack.
 
 Current apps done:
 
-Bin2Dec
-Hello
-Recipe App
+Bin2Dec,
+Hello,
+Recipe App, 
 
