@@ -5,10 +5,9 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/lorem-ipsum@2.0.3/dist/index.js" integrity="sha256-/6T9W7wQhJfKz61H7JQZXskBuITtc9OD5tUiYbqIVOU=" crossorigin="anonymous"></script>
     <script src="../resources/jquery/jquery-3.4.1.min.js"></script>
     <script src="../resources/bootstrap/js/bootstrap.min.js"></script>
-    <script src="main.bundle.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <main>
@@ -18,14 +17,19 @@
           In publishing and graphic design, lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
           You can use this site to generate your own lorem ipsum text!
         </p>
-        <button id="generate-text" class="btn btn-primary mx-auto mt-3">Generate Text</button>
+        <div id="controls" class="container mx-auto d-flex justify-content-around align-items-center w-75">
+          <div class="form-group mb-0">
+            <input id="num-paragraphs" class="form-control" placeholder="Number of paragraphs">
+          </div>
+          <button id="generate-text" class="btn btn-primary">Generate</button>
+        </div>
       </div>
       <div id="content" class="container-fluid bg-light px-2">
         <p id="generated-text" class="container text-center py-4 mt-4">Your Lorem Ispum placeholder text will show up here!</p>
       </div>
     </main>
     <footer>
-      <p id="footer-text" class="fixed-bottom container text-center">Made by <a href="http://www.ethanroos.website">Ethan Roos</a></p>
+      <p id="footer-text" class="position-absolute container text-center">Made by <a href="http://www.ethanroos.website">Ethan Roos</a></p>
     </footer>
   </body>
 </html>
