@@ -7,5 +7,5 @@ Current apps done:
 
 Bin2Dec,
 Hello,
-Recipe App, 
-
+Lorem Ipsum,
+Recipe App
