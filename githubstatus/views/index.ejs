@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Services Status</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../public/js/script.js"></script>
+  </head>
+  <body>
+    <main class="row px-0 mx-0">
+        <div class="col-12 mt-2">
+          <h1 class="text-center">Github Statuses</h1>
+        </div>
+        <div class="row col-10 col-lg-8 bg-light mx-auto shadow-sm mt-3">
+            <div class="item-container col-12 mb-0 d-flex align-items-center justify-content-between border-bottom">
+              <p class="mb-0">Github Status:</p>
+              <p class="mb-0" id="github-status"></p>
+            </div>
+            <div class="item-container col-12 d-flex align-items-center justify-content-between border-bottom">
+              <p class="mb-0">API Request Status:</p>
+              <p class="mb-0" id="api-status"></p>
+            </div>
+            <div class="item-container col-12 d-flex align-items-center justify-content-between border-bottom">
+              <p class="mb-0">Issues, PRs:</p>
+              <p class="mb-0" id="issues-status"></p>
+            </div>
+            <div class="item-container col-12 d-flex align-items-center justify-content-between border-bottom">
+              <p class="mb-0">Notiifcations:</p>
+              <p class="mb-0" id="notifications-status"></p>
+            </div>
+            <div class="item-container col-12 d-flex align-items-center justify-content-between border-bottom">
+              <p class="mb-0">Gists:</p>
+              <p class="mb-0" id="gists-status"></p>
+            </div>
+            <div class="item-container col-12 d-flex align-items-center justify-content-between">
+              <p class="mb-0">Github Pages:</p>
+              <p class="mb-0" id="pages-status"></p>
+            </div>
+        </div>
+        <div class="col-8 mx-auto d-flex justify-content-center mt-4">
+          <button class="btn btn-primary" id="refresh-status-button">Refresh Statuses</button>
+        </div>
+    </main>
+    <footer class="w-100">
+      <p id="footer-text" class="position-absolute fixed-bottom w-100 text-center">Made by <a href="http://www.ethanroos.website">Ethan Roos</a></p>
+    </footer>
+  </body>
+</html>
