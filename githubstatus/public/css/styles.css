@@ -1,0 +1,36 @@
+
+body {
+  font-size: 1.1rem;
+}
+
+.item-container {
+  padding: 1rem 0;
+}
+
+
+
+@media only screen and (max-height: 512px) {
+  .item-container {
+    padding: 0.75rem 0;
+  }
+  
+  body {
+    font-size: 1.2rem
+  }
+}
+
+@media only screen and (min-height: 650px) {
+  .item-container {
+    padding: 1.25rem 0;
+  }
+  
+  body {
+    font-size: 1.25rem
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .item-container {
+    padding: 1.5rem 0;
+  }
+}
