@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Emoji Translator</title>
+    <link rel="stylesheet" type="text/css" href="css/tailwindcss/dist/tailwind.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="font-sans text-4xl text-center mt-4">Emoji Translator</h1>
+    </header>
+    <main class="mt-4">
+      <div id="input-container" class="flex flex-col justify-center items-center">
+        <h2 id="input-label" class="font-sans text-xl text-center mb-4">Insert emojis here:</h2>
+        <textarea id="input" class="border border-black w-3/5 h-48"></textarea>
+        <button id="submit" class="mt-6 btn py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded">Convert</button>
+      </div>
+      <div id="output-container" class="hidden mx-8">
+        <h2 id="output-label" class="font-sans text-xl text-center mt-4">Translation:</h2>
+        <p id="output" class="mt-6 text-center text-xl"></p>
+      </div>
+    </main>
+    <footer class="w-full">
+      <p id="footer-text" class="w-full text-center text-md mt-8 mb-3">Made by <a href="https://ethanroos.website" class="text-blue-500">Ethan Roos</a></p>
+    </footer>
+  </body>
+</html>
